@@ -19,6 +19,7 @@ class LoginPage:
         UserPassword.clear()
         UserPassword.send_keys(password)
 
+
     def click_login(self):
         logInBtn=self.wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@id="main"]/div/section/div/div[2]/div[1]/div/form/div[3]/button')))
         logInBtn.click()
